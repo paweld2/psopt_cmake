@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=@CMAKE_INSTALL_PREFIX@
+libdir=@CMAKE_INSTALL_PREFIX@/@CMAKE_INSTALL_LIBDIR@
+includedir=@CMAKE_INSTALL_PREFIX@/@CMAKE_INSTALL_INCLUDEDIR@/dmatrix
+
+Name: dmatrix
+Version: 1
+Description: dmatrix library from psopt
+Requires: ipopt lapack cxsparse
+Libs: -L${libdir} -ldmatrix -lipopt -lcxsparse
+Cflags: -I${includedir} 
